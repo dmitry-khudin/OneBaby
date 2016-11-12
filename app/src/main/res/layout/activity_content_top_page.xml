@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.scotty.onebaby.ContentTopPage"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorBasic">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageButton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:onClick="OnBack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OnePage"
+            android:id="@+id/textView9"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/imageLayout"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/imageView13"
+                    android:src="@drawable/sample_1"
+                    android:scaleType="fitXY" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read more"
+                    android:id="@+id/button"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="OnReadMore" />
+            </RelativeLayout>
+
+            <com.scotty.expandablelayout.ExpandableRelativeLayout
+                android:layout_below="@+id/imageLayout"
+                android:id="@+id/expandableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ael_duration="350"
+                app:ael_expanded="false"
+                app:ael_interpolator="fastOutSlowIn"
+                app:ael_orientation="vertical">
+                <TextView
+                    android:id="@+id/one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/material_cyan_500"
+                    android:padding="@dimen/margin_small"
+                    android:text="
+    sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.\n
+    sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.\n
+    "
+                    android:textColor="@color/white" />
+
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/one"
+                    android:background="@color/material_blue_500"
+                    android:padding="@dimen/margin_small"
+                    android:text="
+    sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.\n
+    sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.\n
+    "               android:textColor="@color/white" />
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/two"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/commentXML"
+                    layout="@layout/subcomment"
+                    android:layout_gravity="center_horizontal" />
+
+
+            </com.scotty.expandablelayout.ExpandableRelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

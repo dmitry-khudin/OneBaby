@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLayout"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    android:contextClickable="false"
+    android:background="@null">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/layout_click_back"
+        android:scaleType="fitXY"
+        android:src="@drawable/sample_1"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="true"
+        android:padding="10dp" />
+
+    <ToggleButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imagebutton2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:background="@drawable/favorite_button"
+        android:scaleType="fitCenter"
+        android:textOn=""
+        android:textOff=""
+        android:checked="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp" />
+</RelativeLayout>

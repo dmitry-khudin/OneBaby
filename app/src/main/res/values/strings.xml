@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">OneBaby</string>
+    <string name="facebook_app_id">194733544280322</string>
+    <string name="loading">Loading...</string>
+    <string name="auth_failed">Auth Failed !!</string>
+    <string name="msg_subscribed">Subscribed to news topic</string>
+    <string name="server_key">AIzaSyDqIRPzJutB9G1bGkFWAP1u58uo2hPCWFg</string>
+    <string name="client_id">404364254620-besbj9mkuo1l58k8157nhe92821f0v5c.apps.googleusercontent.com</string>
+    <string name="simple_indeterminate">Simple Indeterminate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_content_top_page">ContentTopPage</string>
+    <string name="successed">Email login Success</string>
+    <string name="google_success">Google Login Success</string>
+
+</resources>

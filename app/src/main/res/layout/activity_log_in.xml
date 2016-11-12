@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.scotty.onebaby.LogInActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp">
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OneBaby"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal"
+                android:textSize="37dp"
+                android:textColor="#4e5c83" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:layout_gravity="center_horizontal"
+                android:hint="E-mail"
+                android:background="@drawable/edit_text"
+                android:layout_weight="0"
+                android:paddingLeft="10dp" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText3"
+                android:layout_gravity="center_horizontal"
+                android:hint="Password"
+                android:background="@drawable/edit_text"
+                android:layout_weight="0"
+                android:paddingLeft="10dp" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:id="@+id/button3"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/common_button"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView44"
+                android:clickable="true"
+                android:layout_gravity="center_horizontal" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button_facebook_login"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/facebook_login" />
+            <Space
+                android:layout_width="20px"
+                android:layout_height="10dp" />
+
+            <Button
+                android:id="@+id/google_sign_in_button"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                android:background="@drawable/google_signin" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="@drawable/layout_click_back"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:onClick="OnCreateAccount"
+                android:layout_marginBottom="10dp">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don&apos;t have an account?"
+                    android:id="@+id/textView21"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:clickable="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Sign Up"
+                    android:id="@+id/textView22"
+                    android:textStyle="bold"
+                    android:textSize="21dp"
+
+                    android:layout_gravity="center_vertical" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

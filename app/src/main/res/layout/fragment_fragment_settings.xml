@@ -1,0 +1,158 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.scotty.fragments.FragmentSettings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/listView2"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:background="@drawable/layout_click_back"
+                android:id="@+id/ID_EditAccount">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView3"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_profile_blue" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:text="Edit Account"
+                    android:id="@+id/textView5"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="#13245a"
+                    android:textSize="20dp"
+                    android:layout_weight="14" />
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/layout_click_back"
+                android:clickable="true"
+                android:id="@+id/ID_Notification"
+                android:layout_marginTop="10dp">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView5"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_notification" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:text="Notification"
+                    android:id="@+id/textView7"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="#13245a"
+                    android:textSize="20dp"
+                    android:layout_weight="14" />
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:background="@drawable/layout_click_back"
+                android:id="@+id/ID_Logout"
+                android:layout_marginTop="10dp">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView6"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_exit" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:text="Log Out"
+                    android:id="@+id/textView8"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textColor="#13245a"
+                    android:textSize="20dp"
+                    android:layout_weight="14" />
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

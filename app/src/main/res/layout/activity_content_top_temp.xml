@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    tools:context="com.scotty.onebaby.ContentTopPage"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView3" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/imageLayout"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView13"
+                        android:src="@drawable/sample_1"
+                        android:scaleType="fitXY" />
+
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imageButton"
+                        android:src="@drawable/back"
+                        android:scaleType="fitCenter"
+                        android:background="@null"
+                        android:onClick="OnBack"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <ToggleButton
+                            android:layout_height="20sp"
+
+                            android:id="@+id/imageButton5"
+                            android:background="@drawable/expand_button"
+                            android:textOn=""
+                            android:textOff=""
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_width="20sp"
+                            />
+
+                        <TextView
+                            android:text="Read"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/textView31"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            android:layout_marginBottom="40dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/linearLayout">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="baby"
+                            android:id="@+id/textView50"
+                            android:textColor="#6F3C2C"
+                            android:background="#FFFFFF"
+                            android:textSize="30dp"
+                            android:textStyle="bold"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="6dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LOREM IPSUM"
+                            android:id="@+id/textView48"
+                            android:textColor="#948B7C"
+                            android:background="#FFFFFF"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="6dp"
+                            android:paddingTop="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DOLOR SIT"
+                            android:id="@+id/textView49"
+                            android:textColor="#948B7C"
+                            android:background="#FFFFFF"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="6dp"
+                            android:paddingBottom="4dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/imageLayout"
+                    android:id="@+id/expandableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/material_cyan_500"
+                        android:padding="@dimen/margin_small"
+                        android:text="
+        sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.\n
+        sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.\n
+        "
+                        android:textColor="@color/white" />
+
+
+                    <com.scotty.expandablelayout.HorizontalListView
+                        android:layout_width="match_parent"
+                        android:id="@+id/HorizontalList"
+                        android:layout_height="100dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       android:background="@color/material_blue_500"
+                        android:padding="@dimen/margin_small"
+                        android:text="
+        sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.\n
+        sample.sample.sample.sample.sample.sample.sample.sample.sample.sample.\n
+        "               android:textColor="@color/white" />
+                    <include
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/commentXML"
+                        layout="@layout/subcomment"
+                        android:layout_gravity="center_horizontal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

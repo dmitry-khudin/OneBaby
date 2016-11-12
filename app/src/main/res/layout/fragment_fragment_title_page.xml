@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.scotty.fragments.FragmentTitlePage"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@null">
+
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridView4"
+            android:layout_gravity="center_horizontal|top"
+            android:numColumns="2"
+            android:background="@null" />
+    </LinearLayout>
+</FrameLayout>
